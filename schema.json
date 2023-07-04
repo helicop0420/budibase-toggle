@@ -1,0 +1,85 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "budibase-toggle",
+    "friendlyName": "budibase-toggle",
+    "description": "An amazing Budibase component!",
+    "icon": "CheckmarkCircleOutline",
+    "settings": [
+      {
+        "type": "color",
+        "key": "inactiveColor",
+        "label": "Inactive Background Color",
+        "defaultValue": "#e0e0e0"
+      },
+      {
+        "type": "color",
+        "key": "inaccentColor",
+        "label": "Inactive Switch Color",
+        "defaultValue": "#BAC4C6"
+      },
+      {
+        "type": "color",
+        "key": "activeColor",
+        "label": "Active Background Color",
+        "defaultValue": "#424242"
+      },
+      {
+        "type": "color",
+        "key": "accentColor",
+        "label": "Active Switch Color",
+        "defaultValue": "#BAC4C6"
+      },
+      {
+        "type": "text",
+        "label": "Default value",
+        "key": "defaultValue"
+      },
+      {
+        "label": "Disabled",
+        "key": "isDisabled",
+        "type": "boolean",
+        "defaultValue": false
+      },
+      {
+        "type": "event",
+        "label": "On Active",
+        "key": "onActive",
+        "context": [
+          {
+            "label": "Field Value",
+            "key": "value"
+          }
+        ]
+      },
+      {
+        "type": "event",
+        "label": "On InActive",
+        "key": "onInActive",
+        "context": [
+          {
+            "label": "Field Value",
+            "key": "value"
+          }
+        ]
+      }
+    ],
+    "context": [
+      {
+        "type": "schema"
+      },
+      {
+        "type": "static",
+        "values": [
+          {
+            "label": "Active State",
+            "key": "isActive",
+            "type": "boolean",
+            "defaultValue": false
+          }
+        ]
+      }
+    ]
+  }
+}
